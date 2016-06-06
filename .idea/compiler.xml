@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="UnitViewer" />
+        <module name="Unit-Viewer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="UnitViewer" target="1.8" />
+      <module name="Unit-Viewer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
