@@ -1,15 +1,35 @@
 package com.wh40k.unitviewer.Entities;
 
+import javax.persistence.*;
+
 /**
  * Created by Ultramar on 6/6/16.
  */
+@Entity
+@Table(name = "models")
 public class Model {
-    public String name;
-    public int shootingSkill;
-    public int meleeSkill;
-    public int toughness;
-    public int leadership;
-    public String army;
+
+    @Id
+    @GeneratedValue
+    int id;
+
+    @Column
+    String name;
+
+    @Column
+    int shootingSkill;
+
+    @Column
+    int meleeSkill;
+
+    @Column
+    int toughness;
+
+    @Column
+    int leadership;
+
+    @Column
+    String army;
 
     public int getShootingSkill() {
         return shootingSkill;
