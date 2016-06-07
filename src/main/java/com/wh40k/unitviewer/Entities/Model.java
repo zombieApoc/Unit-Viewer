@@ -82,15 +82,24 @@ public class Model {
         this.name = name;
     }
 
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
     public Model() {
     }
 
-    public Model(String name, int shootingSkill, int meleeSkill, int toughness, int leadership, String army) {
+    public Model(String name, int shootingSkill, int meleeSkill, int toughness, int leadership, String army, String image) {
         this.shootingSkill = shootingSkill;
         this.meleeSkill = meleeSkill;
         this.toughness = toughness;
         this.leadership = leadership;
         this.army = army;
         this.name = name;
+        this.image = image;
     }
 }
