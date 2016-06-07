@@ -4,6 +4,7 @@ package com.wh40k.unitviewer.Entities;
  * Created by Ultramar on 6/6/16.
  */
 public class Model {
+    public String name;
     public int shootingSkill;
     public int meleeSkill;
     public int toughness;
@@ -50,14 +51,23 @@ public class Model {
         this.army = army;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public Model() {
     }
 
-    public Model(int shootingSkill, int meleeSkill, int toughness, int leadership, String army) {
+    public Model(String name, int shootingSkill, int meleeSkill, int toughness, int leadership, String army) {
         this.shootingSkill = shootingSkill;
         this.meleeSkill = meleeSkill;
         this.toughness = toughness;
         this.leadership = leadership;
         this.army = army;
+        this.name = name;
     }
 }
