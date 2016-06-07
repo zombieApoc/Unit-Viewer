@@ -13,23 +13,26 @@ public class Model {
     @GeneratedValue
     int id;
 
-    @Column
+    @Column(nullable = false)
     String name;
 
-    @Column
+    @Column(nullable = false)
     int shootingSkill;
 
-    @Column
+    @Column(nullable = false)
     int meleeSkill;
 
-    @Column
+    @Column(nullable = false)
     int toughness;
 
     @Column
     int leadership;
 
-    @Column
+    @Column(nullable = false)
     String army;
+
+    @Column(nullable = false)
+    String image;
 
     public int getShootingSkill() {
         return shootingSkill;

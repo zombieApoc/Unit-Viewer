@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="Unit-Viewer" />
+        <module name="UnitViewer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Unit-Viewer" target="1.8" />
+      <module name="UnitViewer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
