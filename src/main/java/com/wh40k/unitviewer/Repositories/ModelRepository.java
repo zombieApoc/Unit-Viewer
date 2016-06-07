@@ -7,5 +7,5 @@ import org.springframework.data.repository.CrudRepository;
  * Created by Ultramar on 6/7/16.
  */
 public interface ModelRepository extends CrudRepository<Model, Integer> {
-    
+
 }
