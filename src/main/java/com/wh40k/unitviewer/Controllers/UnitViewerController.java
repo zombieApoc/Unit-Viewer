@@ -29,19 +29,19 @@ public class UnitViewerController {
 
     @PostConstruct
     public void init() {
-        Model yarrick = new Model("Commissar Yarrick", 5, 5, 4, 10, "Imperial Guard", "https://www.games-workshop.com/resources/catalog/product/600x620/99800105003_LordCommissarNEW01.jpg");
+        Model yarrick = new Model("Commissar Yarrick", 5, 5, 4, 10, "ImperialGuard", "https://www.games-workshop.com/resources/catalog/product/600x620/99800105003_LordCommissarNEW01.jpg");
         model.save(yarrick);
-        Model commander = new Model("Companny Commander", 4, 4, 3, 9, "Imperial Guard", "https://s-media-cache-ak0.pinimg.com/736x/e9/59/af/e959af0e1d707a6d0ba07a4247c2a469.jpg");
+        Model commander = new Model("Companny Commander", 4, 4, 3, 9, "ImperialGuard", "https://s-media-cache-ak0.pinimg.com/736x/e9/59/af/e959af0e1d707a6d0ba07a4247c2a469.jpg");
         model.save(commander);
-        Model creed = new Model("Lord Castellian Creed", 4, 4, 3, 10, "Imperial Guard", "http://store.miniwargaming.com/images/D/lord-castellan-creed.jpg");
+        Model creed = new Model("Lord Castellian Creed", 4, 4, 3, 10, "ImperialGuard", "http://store.miniwargaming.com/images/D/lord-castellan-creed.jpg");
         model.save(creed);
-        Model kell = new Model("Colour Sergent Kell", 4, 4, 3, 8, "Imperial Guard", "https://www.games-workshop.com/resources/catalog/product/600x620/99800105006_SergeantKellNEW01.jpg");
+        Model kell = new Model("Colour Sergent Kell", 4, 4, 3, 8, "ImperialGuard", "https://www.games-workshop.com/resources/catalog/product/600x620/99800105006_SergeantKellNEW01.jpg");
         model.save(kell);
-        Model straken = new Model("Colonel Straken", 4, 5, 4, 9, "Imperial Guard", "https://www.games-workshop.com/resources/catalog/product/600x620/99060105264_StrakenNEW01.jpg");
+        Model straken = new Model("Colonel Straken", 4, 5, 4, 9, "ImperialGuard", "https://www.games-workshop.com/resources/catalog/product/600x620/99060105264_StrakenNEW01.jpg");
         model.save(straken);
-        Model deddog = new Model("Nork Deddog", 3, 4, 5, 8, "Imperial Guard", "https://www.games-workshop.com/resources/catalog/product/600x620/99120105053_NorkDeddog360.jpg");
+        Model deddog = new Model("Nork Deddog", 3, 4, 5, 8, "ImperialGuard", "https://www.games-workshop.com/resources/catalog/product/600x620/99120105053_NorkDeddog360.jpg");
         model.save(deddog);
-        Model lCommissar = new Model("Lord Commissar", 5, 5, 3, 10, "Imperial Guard", "https://www.games-workshop.com/resources/catalog/product/600x620/99800105003_LordCommissarNEW01.jpg");
+        Model lCommissar = new Model("Lord Commissar", 5, 5, 3, 10, "ImperialGuard", "https://www.games-workshop.com/resources/catalog/product/600x620/99800105003_LordCommissarNEW01.jpg");
         model.save(lCommissar);
         Model imotekh = new Model("Imotekh the Stormlord", 4, 4, 5, 10, "Necrons", "http://vignette2.wikia.nocookie.net/warhammer40k/images/0/06/Imotehk_the_Stormlord.jpg/revision/latest?cb=20130723074931");
         model.save(imotekh);
@@ -61,25 +61,25 @@ public class UnitViewerController {
         model.save(overlord);
         Model destroyer = new Model("Destroyer Lord", 4, 4, 6, 10, "Necrone", "https://www.games-workshop.com/resources/catalog/product/600x620/99800110014_DestroyerLordPackNEW01.jpg");
         model.save(destroyer);
-        Model calgar = new Model("Marneus Calgar, Lord Macragge", 5, 6, 4, 10, "Space Marines", "https://www.games-workshop.com/resources/catalog/product/600x620/99810101013_MarneusCalgar360.jpg");
+        Model calgar = new Model("Marneus Calgar, Lord Macragge", 5, 6, 4, 10, "SpaceMarines", "https://www.games-workshop.com/resources/catalog/product/600x620/99810101013_MarneusCalgar360.jpg");
         model.save(calgar);
-        Model cato = new Model("Cato Sicarius", 5, 6, 4, 10, "Space Marines", "https://www.games-workshop.com/resources/catalog/product/600x620/99800101010_CaptainSicariusNEW01.jpg");
+        Model cato = new Model("Cato Sicarius", 5, 6, 4, 10, "SpaceMarines", "https://www.games-workshop.com/resources/catalog/product/600x620/99800101010_CaptainSicariusNEW01.jpg");
         model.save(cato);
-        Model tigurius = new Model("Chief Librarian Tigurius", 4, 5, 4, 10, "Space Marines", "http://www.spikeybits.com/wp-content/uploads/2016/04/Tigurius.jpg");
+        Model tigurius = new Model("Chief Librarian Tigurius", 4, 5, 4, 10, "SpaceMarines", "http://www.spikeybits.com/wp-content/uploads/2016/04/Tigurius.jpg");
         model.save(tigurius);
-        Model cassius = new Model("Chaplain Cassius", 4, 5, 6, 10, "Space Marines", "https://www.games-workshop.com/resources/catalog/product/600x620/99800101041_ChaplainCassiusNEW01.jpg");
+        Model cassius = new Model("Chaplain Cassius", 4, 5, 6, 10, "SpaceMarines", "https://www.games-workshop.com/resources/catalog/product/600x620/99800101041_ChaplainCassiusNEW01.jpg");
         model.save(cassius);
-        Model pedro = new Model("Chapter Master Padro Kantor", 5, 6, 4, 10, "Space Marines", "https://www.games-workshop.com/resources/catalog/product/600x620/99800101059_PedroKantor360.jpg");
+        Model pedro = new Model("Chapter Master Padro Kantor", 5, 6, 4, 10, "SpaceMarines", "https://www.games-workshop.com/resources/catalog/product/600x620/99800101059_PedroKantor360.jpg");
         model.save(pedro);
-        Model darnath = new Model("Captian Darnath Lysander", 5, 6, 4, 10, "Space Marines", "https://www.games-workshop.com/resources/catalog/product/600x620/99800101059_CaptainLysanderNEW01.jpg");
+        Model darnath = new Model("Captian Darnath Lysander", 5, 6, 4, 10, "SpaceMarines", "https://www.games-workshop.com/resources/catalog/product/600x620/99800101059_CaptainLysanderNEW01.jpg");
         model.save(darnath);
-        Model kayvaan = new Model("Shadow Captain Kayvaan Shrike", 5, 6, 4, 10, "Space Marines", "https://www.games-workshop.com/resources/catalog/product/600x620/99800101060_ShadowCaptainShrike360.jpg");
+        Model kayvaan = new Model("Shadow Captain Kayvaan Shrike", 5, 6, 4, 10, "SpaceMarines", "https://www.games-workshop.com/resources/catalog/product/600x620/99800101060_ShadowCaptainShrike360.jpg");
         model.save(kayvaan);
-        Model vulkan = new Model("Forgefather Vulkan He'stan", 5, 6, 4, 10, "Space Marines", "https://www.games-workshop.com/resources/catalog/product/600x620/99800101058_VulkanHestan360.jpg");
+        Model vulkan = new Model("Forgefather Vulkan He'stan", 5, 6, 4, 10, "SpaceMarines", "https://www.games-workshop.com/resources/catalog/product/600x620/99800101058_VulkanHestan360.jpg");
         model.save(vulkan);
-        Model khan = new Model("Kor'sarro Khan", 5, 6, 4, 10, "Space Marines", "https://www.games-workshop.com/resources/catalog/product/600x620/99800101062_KorsarroKhanNEW01.jpg");
+        Model khan = new Model("Kor'sarro Khan", 5, 6, 4, 10, "SpaceMarines", "https://www.games-workshop.com/resources/catalog/product/600x620/99800101062_KorsarroKhanNEW01.jpg");
         model.save(khan);
-        
+
 
     }
 }
