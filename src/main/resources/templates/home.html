@@ -6,16 +6,25 @@
 </head>
 <body>
 <form>
-    <a href="/?army=ImperialGuard">Imperial Guard</a>
-    <a href="/?army=Necrons">Necrons</a>
-    <a href="/?army=SpaceMarines">Space Marines</a>
+    <select name="army">
+        <option selected disabled>Army</option>
+        <option value = "ImperialGuard">Imperial Guard</option>
+        <option value = "Necrons">Necrons</option>
+        <option value = "SpaceMarines">Space Marines</option>
+    </select>
 </form>
 {{#army}}
 <form>
     <select name="unit">
-
+        {{#army}}
+            {{.}}
+        {{/army}}
     </select>
 </form>
 {{/army}}
+<button type="submit">Submit</button>
+
+{{#unit}}
+{{/unit}}
 </body>
 </html>

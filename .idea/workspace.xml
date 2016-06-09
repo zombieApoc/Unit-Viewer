@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46a87af5-7cba-4c2c-a65a-1555623beca7" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/wh40k/unitviewer/Entities/Model.java" afterPath="$PROJECT_DIR$/src/main/java/com/wh40k/unitviewer/Entities/Units.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/wh40k/unitviewer/Repositories/ModelRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/wh40k/unitviewer/Repositories/UnitRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wh40k/unitviewer/Controllers/UnitViewerController.class" afterPath="$PROJECT_DIR$/target/classes/com/wh40k/unitviewer/Controllers/UnitViewerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wh40k/unitviewer/Repositories/ModelRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/wh40k/unitviewer/Repositories/ModelRepository.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wh40k/unitviewer/Controllers/UnitViewerController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wh40k/unitviewer/Controllers/UnitViewerController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/home.html" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" />
     </list>
     <ignored path="Unit-Viewer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UnitViewerController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UnitViewerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wh40k/unitviewer/Controllers/UnitViewerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+            <state relative-caret-position="135">
+              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#640#641#0" expanded="true" />
@@ -78,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="405">
+              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -148,13 +141,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/wh40k/unitviewer/UnitViewerApplication.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/wh40k/unitviewer/Entities/Model.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wh40k/unitviewer/Entities/Units.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wh40k/unitviewer/Repositories/ModelRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wh40k/unitviewer/Repositories/UnitRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wh40k/unitviewer/Controllers/UnitViewerController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
       </list>
     </option>
   </component>
@@ -859,14 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wh40k/unitviewer/Entities/Units.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -887,13 +872,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wh40k/unitviewer/Controllers/UnitViewerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        <state relative-caret-position="135">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#640#641#0" expanded="true" />
             <element signature="e#669#670#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
