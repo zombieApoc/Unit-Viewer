@@ -4,10 +4,12 @@ import com.wh40k.unitviewer.Entities.Units;
 import com.wh40k.unitviewer.Repositories.UnitRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.annotation.PostConstruct;
+import java.util.List;
 
 /**
  * Created by Ultramar on 6/7/16.
@@ -18,9 +20,19 @@ public class UnitViewerController {
     @Autowired
     UnitRepository unit;
 
+
+
     @RequestMapping(path = "/", method = RequestMethod.GET)
-    public String home() {
+    public String home(Model model) {
+
         return "home";
+    }
+
+    @RequestMapping(path = "find-army", method = RequestMethod.POST)
+    public String findArmy(String army){
+        List<Units> armyOptions = unit.findByArmy(army);
+
+        return "redirect:/";
     }
 
 

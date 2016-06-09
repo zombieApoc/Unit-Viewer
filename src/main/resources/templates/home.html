@@ -5,7 +5,7 @@
     <title>Unitviewer</title>
 </head>
 <body>
-<form>
+<form action="/find-army" method="post">
     <select name="army">
         <option selected disabled>Army</option>
         <option value = "ImperialGuard">Imperial Guard</option>
@@ -14,7 +14,7 @@
     </select>
 </form>
 {{#army}}
-<form>
+<form action="/find-unit" method="post">
     <select name="unit">
         {{#army}}
             {{.}}
@@ -25,6 +25,7 @@
 <button type="submit">Submit</button>
 
 {{#unit}}
+<img src="">
 {{/unit}}
 </body>
 </html>
