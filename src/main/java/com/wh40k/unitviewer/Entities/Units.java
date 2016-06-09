@@ -7,7 +7,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "models")
-public class Model {
+public class Units {
 
     @Id
     @GeneratedValue
@@ -90,10 +90,10 @@ public class Model {
         this.image = image;
     }
 
-    public Model() {
+    public Units() {
     }
 
-    public Model(String name, int shootingSkill, int meleeSkill, int toughness, int leadership, String army, String image) {
+    public Units(String name, int shootingSkill, int meleeSkill, int toughness, int leadership, String army, String image) {
         this.shootingSkill = shootingSkill;
         this.meleeSkill = meleeSkill;
         this.toughness = toughness;

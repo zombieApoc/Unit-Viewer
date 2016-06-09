@@ -1,6 +1,6 @@
 package com.wh40k.unitviewer.Repositories;
 
-import com.wh40k.unitviewer.Entities.Model;
+import com.wh40k.unitviewer.Entities.Units;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
@@ -8,6 +8,6 @@ import java.util.List;
 /**
  * Created by Ultramar on 6/7/16.
  */
-public interface ModelRepository extends CrudRepository<Model, Integer> {
-    List<Model> findByArmy(String army);
+public interface UnitRepository extends CrudRepository<Units, Integer> {
+    List<Units> findByArmy(String army);
 }
