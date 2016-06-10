@@ -6,26 +6,27 @@
 </head>
 <body>
 <form action="/find-army" method="post">
-    <select name="army">
+    <select name="army" onchange="this.form.submit()">
         <option selected disabled>Army</option>
         <option value = "ImperialGuard">Imperial Guard</option>
         <option value = "Necrons">Necrons</option>
         <option value = "SpaceMarines">Space Marines</option>
     </select>
 </form>
-{{#armyOptions}}
+{{#selectedArmy}}
 <form action="/find-unit" method="post">
-    <select name="unit">
-        {{#army}}
-            {{.}}
-        {{/army}}
+    <select name="unit" onchange="this.form.submit()">
+        <option selected disabled>Unit</option>
+        {{#armyOptions}}
+            <option value="{{id}}">{{name}}</option>
+        {{/armyOptions}}
     </select>
 </form>
-{{/armyOptions}}
+{{/selectedArmy}}
 <button type="submit">Submit</button>
 
 {{#units}}
-<img src="units.image">
+<img src="{{image}}">
 {{/units}}
 </body>
 </html>

@@ -4,8 +4,8 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(name = "models")
-public class Units {
+@Table(name = "units")
+public class Unit {
 
     @Id
     @GeneratedValue
@@ -88,10 +88,10 @@ public class Units {
         this.image = image;
     }
 
-    public Units() {
+    public Unit() {
     }
 
-    public Units(String name, int shootingSkill, int meleeSkill, int toughness, int leadership, String army, String image) {
+    public Unit(String name, int shootingSkill, int meleeSkill, int toughness, int leadership, String army, String image) {
         this.shootingSkill = shootingSkill;
         this.meleeSkill = meleeSkill;
         this.toughness = toughness;
