@@ -2,9 +2,7 @@ package com.wh40k.unitviewer.Entities;
 
 import javax.persistence.*;
 
-/**
- * Created by Ultramar on 6/6/16.
- */
+
 @Entity
 @Table(name = "models")
 public class Units {

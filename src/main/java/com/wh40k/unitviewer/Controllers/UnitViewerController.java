@@ -11,9 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.annotation.PostConstruct;
 import java.util.List;
 
-/**
- * Created by Ultramar on 6/7/16.
- */
+
 @Controller
 public class UnitViewerController {
 
