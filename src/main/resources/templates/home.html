@@ -15,7 +15,7 @@
 </form>
 {{#selectedArmy}}
 <form action="/find-unit" method="post">
-    <select name="unit" onchange="this.form.submit()">
+    <select name="id" onchange="this.form.submit()">
         <option selected disabled>Unit</option>
         {{#armyOptions}}
             <option value="{{id}}">{{name}}</option>
