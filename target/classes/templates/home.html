@@ -5,17 +5,27 @@
     <title>Unitviewer</title>
 </head>
 <body>
-<form>
-    <a href="/?army=ImperialGuard">Imperial Guard</a>
-    <a href="/?army=Necrons">Necrons</a>
-    <a href="/?army=SpaceMarines">Space Marines</a>
-</form>
-{{#army}}
-<form>
-    <select name="unit">
-
+<form action="/find-army" method="post">
+    <select name="army">
+        <option selected disabled>Army</option>
+        <option value = "ImperialGuard">Imperial Guard</option>
+        <option value = "Necrons">Necrons</option>
+        <option value = "SpaceMarines">Space Marines</option>
     </select>
 </form>
-{{/army}}
+{{#armyOptions}}
+<form action="/find-unit" method="post">
+    <select name="unit">
+        {{#army}}
+            {{.}}
+        {{/army}}
+    </select>
+</form>
+{{/armyOptions}}
+<button type="submit">Submit</button>
+
+{{#units}}
+<img src="units.image">
+{{/units}}
 </body>
 </html>

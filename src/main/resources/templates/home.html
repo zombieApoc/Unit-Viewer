@@ -13,7 +13,7 @@
         <option value = "SpaceMarines">Space Marines</option>
     </select>
 </form>
-{{#army}}
+{{#armyOptions}}
 <form action="/find-unit" method="post">
     <select name="unit">
         {{#army}}
@@ -21,11 +21,11 @@
         {{/army}}
     </select>
 </form>
-{{/army}}
+{{/armyOptions}}
 <button type="submit">Submit</button>
 
-{{#unit}}
-<img src="">
-{{/unit}}
+{{#units}}
+<img src="units.image">
+{{/units}}
 </body>
 </html>

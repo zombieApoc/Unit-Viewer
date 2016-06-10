@@ -35,6 +35,13 @@ public class UnitViewerController {
         return "redirect:/";
     }
 
+    @RequestMapping(path = "/find-unit", method = RequestMethod.POST)
+    public String findUnit(String name){
+        Units units = unit.findByName(name);
+
+        return "redirect:/";
+    }
+
 
 
 
