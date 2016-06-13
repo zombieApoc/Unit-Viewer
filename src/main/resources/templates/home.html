@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Unitviewer</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.css"/>
+    <script src="js/bootstrap.js"></script>
 </head>
 <body>
-<form action="/find-army" method="post">
+<form action="/find-army" class="button" method="post">
     <select name="army" onchange="this.form.submit()">
         <option selected disabled>Army</option>
         <option value = "ImperialGuard">Imperial Guard</option>
