@@ -9,7 +9,7 @@
     <script src="js/bootstrap.js"></script>
 </head>
 <body>
-<form action="/find-army" class="btn" method="post">
+<form action="/find-army"  method="post">
     <select name="army" class="btn" onchange="this.form.submit()">
         <option selected disabled>Army</option>
         <option value = "ImperialGuard">Imperial Guard</option>
@@ -19,7 +19,7 @@
 </form>
 {{#selectedArmy}}
 <form action="/find-unit" method="post">
-    <select name="id" onchange="this.form.submit()">
+    <select name="id" class="btn" onchange="this.form.submit()">
         <option selected disabled>Unit</option>
         {{#armyOptions}}
             <option value="{{id}}">{{name}}</option>
