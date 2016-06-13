@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46a87af5-7cba-4c2c-a65a-1555623beca7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Procfile" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/UnitViewer-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/UnitViewer-0.0.1-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/UnitViewer-0.0.1-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/target/UnitViewer-0.0.1-SNAPSHOT.jar.original" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/heroku/app/target/UnitViewer-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/heroku/app/target/UnitViewer-0.0.1-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/heroku/app/target/UnitViewer-0.0.1-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/target/heroku/app/target/UnitViewer-0.0.1-SNAPSHOT.jar.original" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/heroku/slug.tgz" afterPath="$PROJECT_DIR$/target/heroku/slug.tgz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/heroku/app/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/heroku/app/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/heroku/app/target/surefire-reports/TEST-com.wh40k.unitviewer.UnitViewerApplicationTests.xml" afterPath="$PROJECT_DIR$/target/heroku/app/target/surefire-reports/TEST-com.wh40k.unitviewer.UnitViewerApplicationTests.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/heroku/app/target/surefire-reports/com.wh40k.unitviewer.UnitViewerApplicationTests.txt" afterPath="$PROJECT_DIR$/target/heroku/app/target/surefire-reports/com.wh40k.unitviewer.UnitViewerApplicationTests.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.wh40k.unitviewer.UnitViewerApplicationTests.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.wh40k.unitviewer.UnitViewerApplicationTests.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.wh40k.unitviewer.UnitViewerApplicationTests.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.wh40k.unitviewer.UnitViewerApplicationTests.txt" />
     </list>
     <ignored path="Unit-Viewer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -110,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="415">
-              <caret line="83" column="105" selection-start-line="83" selection-start-column="105" selection-end-line="83" selection-end-column="105" />
+              <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -195,6 +206,11 @@
       <MavenGeneralSettings>
         <option name="mavenHome" value="Bundled (Maven 3)" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -1221,7 +1237,7 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
-          <caret line="83" column="105" selection-start-line="83" selection-start-column="105" selection-end-line="83" selection-end-column="105" />
+          <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
           <folding />
         </state>
       </provider>
