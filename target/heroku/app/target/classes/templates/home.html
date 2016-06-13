@@ -10,7 +10,7 @@
 </head>
 <body>
 <form action="/find-army"  method="post">
-    <select name="army" class="btn" onchange="this.form.submit()">
+    <select name="army" class="btn btn-primary" onchange="this.form.submit()">
         <option selected disabled>Army</option>
         <option value = "ImperialGuard">Imperial Guard</option>
         <option value = "Necrons">Necrons</option>
@@ -19,7 +19,7 @@
 </form>
 {{#selectedArmy}}
 <form action="/find-unit" method="post">
-    <select name="id" class="btn" onchange="this.form.submit()">
+    <select name="id" class="btn btn-primary" onchange="this.form.submit()">
         <option selected disabled>Unit</option>
         {{#armyOptions}}
             <option value="{{id}}">{{name}}</option>
