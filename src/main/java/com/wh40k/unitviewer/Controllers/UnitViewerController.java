@@ -23,7 +23,7 @@ public class UnitViewerController {
     @RequestMapping(path = "/", method = RequestMethod.GET)
     public String home(Model model) {
 
-        return "home";
+        return "index";
     }
 
     @RequestMapping(path = "find-army", method = RequestMethod.POST)
@@ -31,7 +31,7 @@ public class UnitViewerController {
         List<Unit> armyOptions = unitRepo.findByArmy(army);
         model.addAttribute("armyOptions", armyOptions);
         model.addAttribute("selectedArmy", true);
-        return "home";
+        return "index";
     }
 
     @RequestMapping(path = "/find-unit", method = RequestMethod.POST)
@@ -39,7 +39,7 @@ public class UnitViewerController {
         Unit units = unitRepo.findById(id);
         model.addAttribute("units", units);
 
-        return "home";
+        return "index";
     }
 
 
