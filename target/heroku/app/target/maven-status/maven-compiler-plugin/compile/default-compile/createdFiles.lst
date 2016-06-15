@@ -1,4 +1,5 @@
 com/wh40k/unitviewer/Entities/Wargear.class
+com/wh40k/unitviewer/Utilities/SelectOption.class
 com/wh40k/unitviewer/Controllers/UnitViewerController.class
 com/wh40k/unitviewer/Entities/Unit.class
 com/wh40k/unitviewer/Repositories/UnitRepository.class
