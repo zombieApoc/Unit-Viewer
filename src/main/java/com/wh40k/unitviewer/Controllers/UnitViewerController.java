@@ -2,6 +2,7 @@ package com.wh40k.unitviewer.Controllers;
 
 import com.wh40k.unitviewer.Entities.Unit;
 import com.wh40k.unitviewer.Repositories.UnitRepository;
+import com.wh40k.unitviewer.Utilities.SelectOption;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 
 @Controller
@@ -18,33 +21,26 @@ public class UnitViewerController {
     @Autowired
     UnitRepository unitRepo;
 
-
-
     @RequestMapping(path = "/", method = RequestMethod.GET)
-    public String home(Model model) {
+    public String home(Model model, String army, Integer id) {
+        model.addAttribute("armies", unitRepo.findDistinctArmy()
+                .stream()
+                .map(a -> new SelectOption(a, a, Objects.equals(a, army)))
+                .collect(Collectors.toList()));
 
+
+        if (army != null) {
+            model.addAttribute("armyOptions", unitRepo.findByArmy(army)
+                    .stream()
+                    .map(u -> new SelectOption(String.valueOf(u.getId()), u.getName(), Objects.equals(u.getId(), id)))
+                    .collect(Collectors.toList()));
+        }
+
+        if (id != null) {
+            model.addAttribute("unit", unitRepo.findById(id));
+        }
         return "index";
     }
-
-    @RequestMapping(path = "find-army", method = RequestMethod.POST)
-    public String findArmy(Model model, String army){
-        List<Unit> armyOptions = unitRepo.findByArmy(army);
-        model.addAttribute("armyOptions", armyOptions);
-        model.addAttribute("selectedArmy", true);
-        return "index";
-    }
-
-    @RequestMapping(path = "/find-unit", method = RequestMethod.POST)
-    public String findUnit(Model model, Integer id){
-        Unit units = unitRepo.findById(id);
-        model.addAttribute("units", units);
-
-        return "index";
-    }
-
-
-
-
 
     @PostConstruct
     public void init() {
@@ -63,7 +59,7 @@ public class UnitViewerController {
         unitRepo.save(deddog);
         Unit lCommissar = new Unit("Lord Commissar", 5, 5, 3, 10, "ImperialGuard", "https://www.games-workshop.com/resources/catalog/product/600x620/99800105003_LordCommissarNEW01.jpg");
         unitRepo.save(lCommissar);
-        Unit imotekh = new Unit("Imotekh the Stormlord", 4, 4, 5, 10, "Necrons", "http://vignette2.wikia.nocookie.net/warhammer40k/images/0/06/Imotehk_the_Stormlord.jpg/revision/latest?cb=20130723074931");
+        Unit imotekh = new Unit("Imotekh the Stormlord", 4, 4, 5, 10, "Necrons", "https://www.games-workshop.com/resources/catalog/product/600x620/99800110006_ImotekhTheStormlordNEW01.jpg");
         unitRepo.save(imotekh);
         Unit nemesor = new Unit("Nemesor Zahndrekh", 4, 4, 5, 10, "Necrons", "http://vignette2.wikia.nocookie.net/warhammer40k/images/d/d6/Nemesor_Zandrekh.jpg/revision/latest?cb=20130729021704");
         unitRepo.save(nemesor);

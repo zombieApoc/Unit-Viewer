@@ -102,29 +102,42 @@
             <div class="col-lg-12">
                 <h1>Leader unit viewer</h1>
                 <p>Select an Army to generate a list of units.  From this list, select a unit to view and see the attributes of.</p>
-                <form action="/find-army"  method="post">
+                <form action="/"  method="get">
                     <select name="army" class="btn btn-primary" onchange="this.form.submit()">
-                        <option selected disabled>Army</option>
-                        <option value = "ImperialGuard">Imperial Guard</option>
-                        <option value = "Necrons">Necrons</option>
-                        <option value = "SpaceMarines">Space Marines</option>
+                        <option>Army</option>
+                        {{#armies}}
+                        <option {{#selected}}selected{{/selected}} value="{{value}}">{{text}}</option>
+                        {{/armies}}
                     </select>
-                </form>
-                {{#selectedArmy}}
-                <form action="/find-unit" method="post">
                     <select name="id" class="btn btn-primary" onchange="this.form.submit()">
-                        <option selected disabled>Unit</option>
+                        <option value="">Unit</option>
                         {{#armyOptions}}
-                        <option value="{{id}}">{{name}}</option>
+                        <option {{#selected}}selected{{/selected}} value="{{value}}">{{text}}</option>
                         {{/armyOptions}}
                     </select>
                 </form>
-                {{/selectedArmy}}
 
-                {{#units}}
-                <img src="{{image}}" title="{{name}}" alt="{{name}}"/>
-                <p> {{name}}, Balistics Skill = {{shootingSkill}}, Weapon Skill = {{meleeSkill}}, Toughness = {{toughness}}, Leadership = {{leadership}}</p>
-                {{/units}}
+
+                {{#unit}}
+                <div class="container">
+                    <div class="col-sm-6">
+                    <img src="{{image}}" title="{{name}}" alt="{{name}}"/>
+                    </div>
+                    <div class="col-sm-6">
+                    <h2 class="featurette-heading">{{name}}</h2>
+                    <dl class="dl-horizontal">
+                        <dt>Ballistics Skill</dt>
+                        <dd>{{shootingSkill}}</dd>
+                        <dt>Weapon Skill</dt>
+                        <dd>{{meleeSkill}}</dd>
+                        <dt>Toughness</dt>
+                        <dd>{{toughness}}</dd>
+                        <dt>Leadership</dt>
+                        <dd>{{leadership}}</dd>
+                    </dl>
+                    </div>
+                </div>
+                {{/unit}}
             </div>
         </div>
 
@@ -134,7 +147,8 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; Dakka 2016</p>
+                    <p>all IPs belong to there respective owners</p>
                 </div>
             </div>
             <!-- /.row -->
