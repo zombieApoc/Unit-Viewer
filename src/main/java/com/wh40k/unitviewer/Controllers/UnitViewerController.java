@@ -45,7 +45,7 @@ public class UnitViewerController {
     @PostConstruct
     public void init() {
         unitRepo.deleteAll();
-        Unit yarrick = new Unit("Commissar Yarrick", 5, 5, 4, 10, "ImperialGuard", "https://www.games-workshop.com/resources/catalog/product/600x620/99800105003_LordCommissarNEW01.jpg");
+        Unit yarrick = new Unit("Commissar Yarrick", 5, 5, 4, 10, "ImperialGuard", "https://www.games-workshop.com/resources/catalog/product/600x620/99800105001_YarrickNEW01.jpg");
         unitRepo.save(yarrick);
         Unit commander = new Unit("Company Commander", 4, 4, 3, 9, "ImperialGuard", "https://s-media-cache-ak0.pinimg.com/736x/e9/59/af/e959af0e1d707a6d0ba07a4247c2a469.jpg");
         unitRepo.save(commander);
